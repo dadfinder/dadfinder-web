@@ -14,10 +14,9 @@
     }
     .navbar-brand {
         color: $primary;
-        font-family: $headings-font-family;
+        font-family: $font-family-script;
         font-weight: $headings-font-weight;
         letter-spacing: $headings-letter-spacing;
-        text-transform: uppercase;
         img {
             height: 1.5rem;
         }
