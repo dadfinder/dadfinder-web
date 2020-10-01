@@ -1,0 +1,458 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Dadfinder Dot Biz
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Dad Finder
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars.ml-1
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#services') Services
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Testimonials
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') About
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#help') Help
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#team') Team
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contact') Contact
+        // Masthead
+        header.masthead
+            .container
+                .masthead-subheading Where is your Dad?
+                .masthead-heading.text-uppercase We miss your Dad too
+                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Find My Dad
+
+        // Services
+        section#services.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Services
+                    h3.section-subheading.text-muted Finding your dad or a suitable replacement dad is our mission.
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-binoculars.fa-stack-1x.fa-inverse
+                        h4.my-3 Search
+                        p.text-muted
+                            | We will search every convience store your dad may have gone to pick up those cigarettes that he said he'd be back after picking up.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-birthday-cake.fa-stack-1x.fa-inverse
+                        h4.my-3 Birthday Repayment
+                        p.text-muted
+                            | We'll make your recover dad make up for lost birthdays.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-lock.fa-stack-1x.fa-inverse
+                        h4.my-3 Web Retainment
+                        p.text-muted
+                            | We will help keep your dad safe and secure to prevent future loss.
+
+        // Portfolio Grid
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Testimonials
+                    h3.section-subheading.text-muted Our customers love us.
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/01-dad-sunset-with-child-400.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Sunset Walks
+                                .portfolio-caption-subheading.text-muted Bliss With Dad
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/02-man-person-cute-young-400.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Who's Your Daddy?
+                                .portfolio-caption-subheading.text-muted Birthers
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/03-man-holiday-people-face-400.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Old Dads
+                                .portfolio-caption-subheading.text-muted Oldtyme Love
+                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/04-pregnancy-pregnant-mom-dad-400.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Surprise I'm Pregnant
+                                .portfolio-caption-subheading.text-muted The Unexpected
+                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/05-adult-caucasian-child-daughter-400.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Smokers
+                                .portfolio-caption-subheading.text-muted Ghost Dad
+                    .col-lg-4.col-sm-6
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/06-field-dad-with-family-400.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Field of Dads
+                                .portfolio-caption-subheading.text-muted Lost in the Wild
+
+        // About
+        section#about.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase About
+                    h3.section-subheading.text-muted It's like Uber for finding Dads.
+                ul.timeline
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 2009-2011
+                                h4.subheading Our Humble Beginnings
+                            .timeline-body
+                                p.text-muted
+                                    | We started our first Dad Finder office. Flyering local cafes and restaurants to attract customers and working soup kitches to get leads on missing dads.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 March 2011
+                                h4.subheading Series A Funding
+                            .timeline-body
+                                p.text-muted
+                                    | We got a boat load of money to start developing the latest and greatest Dad finding technologies.
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 December 2012
+                                h4.subheading Lost Dadar 3000 Production
+                            .timeline-body
+                                p.text-muted
+                                    | Our Lost Dad Radar system, Lost Dadar 3000, went into production. They system is capable of finding 100 dads per minute in different area codes.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 July 2014
+                                h4.subheading CIA vs Dad Finder
+                            .timeline-body
+                                p.text-muted
+                                    | The CIA tried to sue Dad Finder for the rights to use Lost Dadar 3000 tracking technologies and lost with a verdict upheld by the SCOTUS.
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/5.png', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 October 2016
+                                h4.subheading 1 Million Dads Caught
+                            .timeline-body
+                                p.text-muted
+                                    | Dad Finder reunited over 1 million families with their Dads.
+                    li.timeline-inverted
+                        .timeline-image
+                            h4
+                                | Be Part
+                                br
+                                | Of Our
+                                br
+                                | Story!
+
+        // About
+        section#help.page-section
+          .container
+              .text-center
+                  h2.section-heading.text-uppercase Help
+                  h3.section-subheading.text-muted With our help you won't be like this kid.
+              .row
+                  .embed-responsive.embed-responsive-4by3
+                      iframe.embed-responsive-item(src='https://www.youtube.com/embed/niqNJuihLkg')
+
+        // Team
+        section#team.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Our Amazing Team
+                    h3.section-subheading.text-muted Our dads smell like other mom's lips.
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/myyk-square-225.jpg', alt='')
+                            h4 Myyk Seok
+                            p.text-muted Dad Wrangler
+                            a.btn.btn-dark.btn-social.mx-2(href='https://twitter.com/Myyyyyk')
+                                i.fab.fa-twitter
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/myyyk')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/mmyykk')
+                                i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/alan-square-225.jpg', alt='')
+                            h4 Alan Gerber
+                            p.text-muted Dadlord
+                            a.btn.btn-dark.btn-social.mx-2(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-dark.btn-social.mx-2(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-dark.btn-social.mx-2(href='#!')
+                                i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/baby-models-children-square-225.jpg', alt='')
+                            h4 Mercurius Faustino
+                            p.text-muted Drunk Baby
+                            a.btn.btn-dark.btn-social.mx-2(href='#!')
+                                i.fab.fa-twitter
+                            a.btn.btn-dark.btn-social.mx-2(href='#!')
+                                i.fab.fa-facebook-f
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/akgerber/')
+                                i.fab.fa-linkedin-in
+                .row
+                    .col-lg-8.mx-auto.text-center
+                        p.large.text-muted
+                            | Our team has has a combined 148 years of dealing with daddy issues.
+
+        // Clients
+        div.py-5
+            .container
+                .row
+                    .col-md-3.col-sm-6.my-3
+                        a(href='#!')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/envato.jpg', alt='')
+                    .col-md-3.col-sm-6.my-3
+                        a(href='#!')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/designmodo.jpg', alt='')
+                    .col-md-3.col-sm-6.my-3
+                        a(href='#!')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/themeforest.jpg', alt='')
+                    .col-md-3.col-sm-6.my-3
+                        a(href='#!')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/creative-market.jpg', alt='')
+
+        // Contact
+        section#contact.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Contact Us
+                    h3.section-subheading.text-muted
+                        p Even though your dad left without leaving us an address, we won't.
+                        p
+                            button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(onclick="location.href='mailto:daddyissues@dadfinder.biz?Subject=I%20miss%20you%20dad%20please%20come%20home'" type='button') Email Us
+
+        // Footer
+        footer.footer.py-4
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-left
+                        | Copyright © Dad Finder.biz 2016-2020
+                    .col-lg-4.my-3.my-lg-0
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-twitter
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/dadfinder.biz/')
+                            i.fab.fa-facebook-f
+                        a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            i.fab.fa-linkedin-in
+                    .col-lg-4.text-lg-right
+                        a.mr-3(href='#!') Privacy Policy
+                        a(href='#!') Terms of Use
+
+        // Portfolio Modals
+        // Modal 1
+        #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Sunset Walks
+                                    p.item-intro.text-muted Thank you Dad Finder for finding my dad.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/01-dad-sunset-with-child-1920.jpg', alt='')
+                                    p My dad left in 1991. We were at a department store and I went to the bathroom and never did find him when I came back.
+                                    p Dad Finders brought that dad back into my life. He's a completely changed man. We've been spending a lot of time spooning while watching Disney movies since he's been back. I love my new Dad!
+                                    ul.list-inline
+                                        li Date: July 2014
+                                        li Client: Erik Dimosthenis
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | FIND DAD
+        // Modal 2
+        #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Birthers
+                                    p.item-intro.text-muted You can't deny it, you're my daddy.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/02-man-person-cute-young.jpg', alt='')
+                                    p This picture was moments before my daddy freaked out and denied parenthood of me. He called my mother a cheating hussy saying my eyes didn't match. I'm not an adult and missed out on the games of catch and birthday presents from my dad. So I enlisted Dad Finder to find that dad for me.
+                                    p They caught him spectacularly at his new job. A DNA test showed that he is infact my daddy. His new life is being held in a nearby Dad Finder facility until he is finished with his birthday present repayment program. We also play catch on Wednesdays. I'm so happy to be dealing with my daddy issues head on!
+                                    ul.list-inline
+                                        li Date: Apr 2016
+                                        li Client: Irving Randolph
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | FIND DAD
+        // Modal 3
+        #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Old Dad
+                                    p.item-intro.text-muted It's worth it to find your old dad too.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/03-man-holiday-people-face.jpg', alt='')
+                                    p A dad left in the wild will age. But an old dad isn't necessarily one that you should abandon yourself.
+                                    p You can heal the wounds that your old dad created when he went away. Find that old dad today.
+                                    ul.list-inline
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | FIND DAD
+        // Modal 4
+        #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase The Unexpected
+                                    p.item-intro.text-muted Men should always wear a condom unless they want to be a dad.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/04-pregnancy-pregnant-mom-dad.jpg', alt='')
+                                    p He thought he could walk away from our soon to be little family member. I was working 5 jobs while pregant, knew I had to find that dad or else I don't know how we were going to eat. Hired DadFinders and they didn't find my child's dad but they gave me a suitable replacement dad and at first I was a little disappointed. Then I started to think more and was like fuck it, I really need the help or I'm going to be homeless before long. Thanks Dad Finders!
+                                    ul.list-inline
+                                        li Date: Oct 2015
+                                        li Client: Raisa Dejan
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | FIND DAD
+        // Modal 5
+        #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Ghost Dad
+                                    p.item-intro.text-muted All dads go to heaven.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/05-adult-caucasian-child-daughter.jpg', alt='')
+                                    p My dad was a smoker. As a kid he would put out his cigarettes on my skin, scars to remember him by. He died of cancer last month. I thought this would make me happy, but it didn't.
+                                    p A friend referred me to Dad Finders. Dad Finders reached into their extensive abusive dad database and found a match for me. My new dad is not my ghost dad, but he's just as abusive! Thanks Dad Finders!
+                                    ul.list-inline
+                                        li Date: Oct 2015
+                                        li Client: Kader Brando
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | FIND DAD
+        // Modal 6
+        #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Lost in the Wild
+                                    p.item-intro.text-muted A dad in the hand is worth two in the bush.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/06-field-dad-with-family.jpg', alt='')
+                                    p I was camping with my dad and he went missing while trying to find us some more firewood. What a good dad he was! He must have been lost out there. Perhaps he was eaten by a bear? We might never know.
+                                    p Dad Finders couldn't find him, but they did find me a burly Pacific Northwest outdoorsy type Dad to take his place. This replacement dad always fills my heart with warmth and lights my fire!
+                                    ul.list-inline
+                                        li Date: Oct 2015
+                                        li Client: Kevin Berard
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | FIND DAD
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
