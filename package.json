@@ -14,22 +14,20 @@
     },
     "description": "Agency is a one page HTML theme for Bootstrap.",
     "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+        "dad",
+        "finder",
+        "cigarettes"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/agency",
+    "homepage": "https://dadfinder.biz",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-agency/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/dadfinder/dadfinder-web/issues",
+        "email": "daddyissues@dadfinder.biz"
     },
     "license": "MIT",
     "author": "Myyk Seok",
     "contributors": [
         "Myyk Seok",
+        "Alan Gerber",
         "David Miller (http://davidmiller.io/)"
     ],
     "repository": {
