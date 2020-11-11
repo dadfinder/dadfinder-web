@@ -1,0 +1,7 @@
+mixin service(icon, name, description)
+  .col-md-4
+      span.fa-stack.fa-4x
+          i.fas.fa-circle.fa-stack-2x.text-primary
+          i.fas.fa-stack-1x.fa-inverse(class!=icon)
+      h4.my-3=name
+      p.text-muted=description

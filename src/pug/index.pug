@@ -1,3 +1,4 @@
+include mixin/services.pug
 doctype html
 html(lang='en')
 
@@ -53,7 +54,6 @@ html(lang='en')
                 .masthead-subheading Where is your Dad?
                 .masthead-heading.text-uppercase We miss your Dad too
                 a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Find My Dad
-
         // Services
         section#services.page-section
             .container
@@ -61,27 +61,9 @@ html(lang='en')
                     h2.section-heading.text-uppercase Services
                     h3.section-subheading.text-muted Finding your dad or a suitable replacement dad is our mission.
                 .row.text-center
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-binoculars.fa-stack-1x.fa-inverse
-                        h4.my-3 Search
-                        p.text-muted
-                            | We will search every convience store your dad may have gone to pick up those cigarettes that he said he'd be back after picking up.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-birthday-cake.fa-stack-1x.fa-inverse
-                        h4.my-3 Birthday Repayment
-                        p.text-muted
-                            | We'll make your recover dad make up for lost birthdays.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Retainment
-                        p.text-muted
-                            | We will help keep your dad safe and secure to prevent future loss.
+                    +service('fa-binoculars','Search',"We will search every convience store your dad may have gone to pick up those cigarettes that he said he'd be back after picking up.")
+                    +service('fa-birthday-cake','Birthday Repayment',"We'll make your recovered dad make up for lost birthdays.")
+                    +service('fa-lock','Web Retainment',"We will help keep your dad safe and secure to prevent future loss.")
 
         // Portfolio Grid
         section#portfolio.page-section.bg-light
