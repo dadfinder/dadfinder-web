@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - DadfinderBiz v6.0.2 (https://dadfinder.biz)
-* Copyright 2013-2020 Myyk Seok
+* Copyright 2013-2021 Myyk Seok
 * Licensed under MIT (https://github.com/StartBootstrap/dadfinder-biz/blob/master/LICENSE)
 */
 /*!
@@ -2025,19 +2025,11 @@ pre code {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
 }
-.form-control::-webkit-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
 .form-control::-moz-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-.form-control::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -7364,7 +7356,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -7384,9 +7375,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
