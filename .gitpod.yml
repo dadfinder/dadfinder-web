@@ -1,6 +1,13 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: |
-      npm install
+      npm install -g npm
       npm run build
-      git checkout docs/CNAME
+      git checkout -- docs/CNAME
+    command: |
+      npm run start
+
+# Ports to expose on workspace startup
+ports:
+  - port: 3000
+    onOpen: open-preview
