@@ -1,7 +1,7 @@
 /*!
     * Start Bootstrap - DadfinderBiz v6.0.2 (https://dadfinder.biz)
     * Copyright 2013-2020 Myyk Seok
-    * Licensed under MIT (https://github.com/StartBootstrap/dadfinder-biz/blob/master/LICENSE)
+    * Licensed under MIT (https://github.com/StartBootstrap/dadfinder-biz/blob/main/LICENSE)
     */
     (function ($) {
     "use strict"; // Start of use strict
