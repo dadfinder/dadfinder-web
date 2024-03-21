@@ -1,13 +1,5 @@
-name: Dependabot Auto-Merger
-
-on:
-  workflow_run:
-    types:
-      - completed
-    workflows:
-      - 'Update npm Dependencies after Dependabot package upgrade'
-    branches:
-      - dependabot/npm_and_yarn/**
+name: Dependabot auto-approve
+on: pull_request
 
 permissions:
   contents: write
@@ -16,10 +8,15 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: github.actor == 'dependabot[bot]'
     steps:
-      - name: Enable auto-merge
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Enable auto-merge for Dependabot PRs
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
